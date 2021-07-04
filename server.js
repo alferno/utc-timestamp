@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 })
 
 // your first API endpoint...
-app.get('/api/timestamp/:dateString?', function (req, res) {
+app.get('/api/:dateString?', function (req, res) {
   const dateString = req.params.dateString
   let date
   if (!dateString) {
